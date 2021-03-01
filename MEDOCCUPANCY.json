@@ -1,0 +1,8 @@
+---
+layout: none
+---
+[{% for item in site.data.MEDOCCUPANCY %}{
+  {% assign occ = item[1] %}
+	"date": "{{item[0]}}",
+	"date-text": "{{occ.DATE}}",
+}{% if forloop.rindex0 > 0 %},{% endif %}{% endfor %}]
