@@ -10,8 +10,8 @@ Note 1 : RH & TSKH were reported as one entity in the original report. It will b
 
 Note 2 : NLTH does not have acute medical ward and thus reports as "undefined"
 
-{% assign last_one = site.data.MEDOCCUPANCY | sort:"DATE" | last %}
+{% assign last_one = site.data.MEDOCCUPANCY | sort | last %}
 
 There are in total {{ site.data.MEDOCCUPANCY | size }} entries in this API. The latest entry is
 
-{{ last_one }}
+{{ last_one[1].DATE }}
