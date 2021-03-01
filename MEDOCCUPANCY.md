@@ -17,7 +17,7 @@ There are in total {{ site.data.MEDOCCUPANCY | size }} entries in this API.
 Below shows the last 10 entries in the API.
 
 <table>
-  {% for row in data | limit : 10 %}
+  {% for row in data | limit : 20 %}
     {% if forloop.first %}
     <tr>
       {% for pair in row %}
