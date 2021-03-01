@@ -14,6 +14,8 @@ Note 2 : NLTH does not have acute medical ward and thus reports as "undefined"
 
 There are in total {{ site.data.MEDOCCUPANCY | size }} entries in this API.
 
+Below shows the last 10 entries in the API.
+
 <table>
   {% for row in data | limit : 10 %}
     {% if forloop.first %}
