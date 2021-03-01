@@ -12,4 +12,4 @@ Note 2 : NLTH does not have acute medical ward and thus reports as "undefined"
 
 {% assign last_one = site.data.MEDOCCUPANCY | sort | last %}
 
-There are in total {{ site.data.MEDOCCUPANCY | size }} entries in this API. The latest entry is dated on {{ site.data.MEDOCCUPANCY | sort | last_one.DATE }}
+There are in total {{ site.data.MEDOCCUPANCY | size }} entries in this API. The latest entry is dated on {{ last_one.DATE }}
